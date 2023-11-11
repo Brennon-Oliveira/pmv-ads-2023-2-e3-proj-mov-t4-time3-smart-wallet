@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Usuario from '../pages/Usuario'
 import NovoLançamento from '../pages/NovoLancamento';
+import Extrato from '../pages/Extrato';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,13 @@ const Main = () => {
         options={{
           header: () => null
         }}
+        />
+        <Stack.Screen
+          name="Extrato"
+          component={Extrato}
+          options={{
+            header: () => null
+          }}
         />
      </Stack.Navigator>
   );

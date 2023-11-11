@@ -12,6 +12,10 @@ const Usuario = ({ navigation }) => {
     navigation.navigate('NovoLançamento');
   }
 
+  const extract = ()=>{
+    navigation.navigate('Extrato');
+  }
+
   return (
     <View style={styles.page}>
       <View style={styles.header}>
@@ -24,6 +28,8 @@ const Usuario = ({ navigation }) => {
       <Container style={styles.container}>
         <Text>Olá {name}</Text>
         <MyButton onPress={newPosting} title="Novo lançamento"></MyButton>
+        <MyButton onPress={extract} title="Extrato"></MyButton>
+
         {/* Conteúdo da página do usuário aqui */}
       </Container>
     </View>
